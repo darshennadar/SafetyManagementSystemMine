@@ -15,10 +15,10 @@ namespace SafetyManagementSystem.API.Controllers
         {
             var user = new UserModel
             {
-                userID = Guid.NewGuid(),
-                userName = "Timmy Trumpet",
-                userEmail = "timtrumpet@gmail.com",
-                systemRole = "IncidentCapturer"
+                UserID = Guid.NewGuid(),
+                UserName = "Timmy Trumpet",
+                UserEmail = "timtrumpet@gmail.com",
+                SystemRole = "IncidentCapturer"
 
             };
             return Ok(user);

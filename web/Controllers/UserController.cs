@@ -1,20 +1,12 @@
 using System; 
 using Microsoft.AspNetCore.Mvc;
-using SafetyManagementSystem.Web.Models;
-
+using SafetyManagementSystem.Models;
 
 namespace SafetyManagementSystem.Web.Controllers
 {
-   public class UserController : Controller
+   public class UserController(HttpClient httpClient) : Controller
     {
-        private readonly HttpClient _httpClient; 
-        
-        public UserController(HttpClient httpClient)
-        {
-
-            _httpClient = httpClient; 
-            
-        }
+        private readonly HttpClient _httpClient = httpClient;
 
         [HttpGet]
         public async Task<IActionResult> GetUser()

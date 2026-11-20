@@ -36,6 +36,16 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/models.dll": {}
+        }
       }
     }
   },
@@ -75,11 +85,17 @@
         "microsoft.openapi.2.13.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "models/1.0.0": {
+      "type": "project",
+      "path": "../models/models.csproj",
+      "msbuildProject": "../models/models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.15"
+      "Microsoft.AspNetCore.OpenApi >= 10.0.15",
+      "models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -89,11 +105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\darsh\\source\\repos\\Personal Projects\\SafetyManagementSystem\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\darsh\\Desktop\\GitHub Projects\\C# Projects\\SafetyManagementSystemMine\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\darsh\\source\\repos\\Personal Projects\\SafetyManagementSystem\\api\\api.csproj",
+      "projectPath": "C:\\Users\\darsh\\Desktop\\GitHub Projects\\C# Projects\\SafetyManagementSystemMine\\api\\api.csproj",
       "packagesPath": "C:\\Users\\darsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\darsh\\source\\repos\\Personal Projects\\SafetyManagementSystem\\api\\obj\\",
+      "outputPath": "C:\\Users\\darsh\\Desktop\\GitHub Projects\\C# Projects\\SafetyManagementSystemMine\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,7 +131,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\darsh\\Desktop\\GitHub Projects\\C# Projects\\SafetyManagementSystemMine\\models\\models.csproj": {
+              "projectPath": "c:\\Users\\darsh\\Desktop\\GitHub Projects\\C# Projects\\SafetyManagementSystemMine\\models\\models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
